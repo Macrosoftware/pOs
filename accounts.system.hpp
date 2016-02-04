@@ -83,5 +83,14 @@ class Account
 			FILE * acc = fopen("accounts.acc", "a+");
 			char password[100] = "";
 			char usrn[100] = "";
+			if (language == 1)
+				cout << "Give me an username for new account:\n";
+			else if (language == 2)
+				cout << "Podaj nazwę dla nowego konta:\n";
+			cin >> usrn;
+			if (language == 1)
+				cout << "Give me a password for new account:\n";
+			else if (language == 2)
+				cout << "";
 		}
 };
